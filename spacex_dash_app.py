@@ -19,7 +19,7 @@ app = dash.Dash(__name__)
 server = app.server
 
 # Create an app layout
-app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
+app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard by Abdul Jaweed',
                                         style={'textAlign': 'center', 'color': '#503D36',
                                                'font-size': 40}),
                                 # TASK 1: Add a dropdown list to enable Launch Site selection
