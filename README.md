@@ -37,7 +37,7 @@ The project includes eight Jupyter Notebooks, one Powerpoint Presentation and on
 
 7. Space-X Dashboard
 
-8. Deploying DashBoard
+8. Deploying Dashboard
 
 8. Space-X Machine Learning Prediction
 
@@ -89,7 +89,7 @@ Visualizing the success rate in each orbit:
 
 Class 1 = Success    
 Class 0 = Failure  
-![](./img/orbit%20vs%20flight%20no..PNG)
+![](./img/orbit%20vs%20flight%20no.jpeg)
 
 ## 6. Interactive Map Analytics with Folium
 
@@ -103,7 +103,7 @@ This is all done using Folium, a Python mapping library that allows for the crea
 Launch sites:  
 ![](./img/Mark_Map.PNG)
 
-Success orFailed Launches for each Site :  
+Success or Failed Launches for each Site :  
 ![](./img/success_fail.PNG)
 
 Launch site proximities distances such as railway line, main road and coast:  
