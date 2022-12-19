@@ -1,4 +1,4 @@
-# SpaceX Falcon 9 Landing Prediction using Machine Learning 
+# SpaceX Falcon 9 Landing Prediction
 
 **Falcon 9 Rocket Family**  
 ![](./img/Falcon9_rocket_family.svg)
@@ -94,29 +94,24 @@ Class 0 = Failure
 ## 6. Interactive Map Analytics with Folium
 
 In this notebook we perform the following:
-- Mark all launch sites on a map
-- Mark the success/failed launches for each site on the map
-- Calculate the distances between a launch site to its proximities
+- Mark all Launch Sites on a Map 
+- Mark the Success/Failed Launches for each Site on the Map 
+- Calculate the Distances Between a Launch Site to its Proximities 
 
 This is all done using Folium, a Python mapping library that allows for the creation of interactive maps.
 
 Launch sites:  
-![](./img/Mark_Map.PNG.PNG)
+![](./img/Mark_Map.PNG)
+
+Success orFailed Launches for each Site :  
+![](./img/success_fail.PNG)
 
 Launch site proximities distances such as railway line, main road and coast:  
-![](./img/Site_Proximities.PNG.PNG)
+![](./img/Site_Proximities.PNG)
 
 ## 7. Space-X Dashboard
 
-To access the dashboard, this notebook must be cloned and run on your local machine.
-
-Installation requirements:
-- Python 
-- pandas
-- dash
-- plotly
-
-Execute all the cells. The final cell will output a statement saying "Dash is running on "https://spacex-falcon9-landing-prediction.onrender.com/". Click on the link and the dashboard will open up in your browser.  
+Dashboard link : "https://spacex-falcon9-landing-prediction.onrender.com/". Click on the link and the dashboard will open up in your browser.  
 
 ![](./img/dash.PNG)
 
@@ -124,18 +119,18 @@ Execute all the cells. The final cell will output a statement saying "Dash is ru
 
 In this notebook we perform the following:
 
-- Create a column for the `Class`
-- Standardize the data
-- Split into training data and test data
-- Find best Hyperparameter for SVM, Classification Trees and Logistic Regression
-- Find the method that performs best using test data
+- Creating Column for “Class”
+- Standardizing the data
+- Splitting data for training and testing
+- Find the best hyperparameter 
+- Matrix Model Evaluation
   
 ![](./img/ml-graph.PNG)
 
 ## Conclusion:
 
 - The analysis showed that there is a positive correlation between number of flights and success rate as the success rate has improved over the years. 
-- There are certain orbits like SSO, HEO, GEO, and ES-L1 where launches were the most successful.
-- Success rate can be linked to payload mass as the lighter payloads generally proved to be more successful than the heavier payloads. 
-- The launch sites are strategically located near highways and railways for transportationof personel and cargo, but also far away from cities for safety.
-- The best predictive model to use for this dataset is the Decision Tree Classifier as it had the highest accuracy with 94%.
+- The results of the (EDA) exploratory data analysis revealed the success rate of the SpaceX Falcon 9 rocket landings is 66%.
+- Orbit ES-L1, GEO, HEO, and SSO has a 100% success rates. 
+- I deploy this dashboard on render web hosting service for better experience.
+- Except Decision Tree the other three model like K Nearest Neighbors, Support Vector Machine and Logistic Regression Machine Learning Algorithms perform same accuracy 83%.
